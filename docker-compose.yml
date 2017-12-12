@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  auth-generator:
+    container_name: auth-gen
+    restart: always
+    build: .
+    ports:
+      - 5000:3000
+    env_file: .env
